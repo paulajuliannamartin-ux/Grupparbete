@@ -3,12 +3,10 @@ function showPage(pageId) {
   pages.forEach(page => page.classList.remove('active'));
   document.getElementById(pageId).classList.add('active');
 
-  // Stänger menyn på mobil efter klick
+  // stäng menyn på mobil
   document.querySelector("nav ul").classList.remove("show");
 }
 
 function toggleMenu() {
   document.querySelector("nav ul").classList.toggle("show");
 }
-
-
