@@ -8,20 +8,28 @@
 </head>
 <body>
   <header>
-    <h1>Min Klädshop</h1>
+    <h1>BRANSNAME</h1>
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#" onclick="showPage('home')">Startsida</a></li>
+        <li><a href="#" onclick="showPage('collection')">Kollektion</a></li>
+        <li><a href="#" onclick="showPage('about')">About</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#" onclick="showPage('home')">Startsida</a></li>
-      <li><a href="#" onclick="showPage('collection')">Kollektion</a></li>
-      <li><a href="#" onclick="showPage('about')">About</a></li>
-    </ul>
-  </nav>
-
   <div id="home" class="content active">
-    <h2>Välkommen till vår webshop!</h2>
-    <p>Här hittar du de senaste trenderna inom mode.</p>
+    <div class="hero">
+      <img src="images/hero.jpg" alt="Hero Bild">
+      <div class="hero-text">
+        <h2>Välkommen till vår webshop!</h2>
+        <p>Upptäck de senaste trenderna inom mode.</p>
+        <button onclick="showPage('collection')">Handla Nu</button>
+      </div>
+    </div>
   </div>
 
   <div id="collection" class="content">
