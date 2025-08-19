@@ -1,8 +1,8 @@
 /* Färgpalett */
 :root {
-  --beige: #f5e6d3;
-  --brown: #6b3e26;
-  --orange: #d2691e;
+  --beige: #F5EC9;
+  --brown: #9C9180;
+  --orange: #5C614A;
 }
 
 body {
@@ -155,3 +155,4 @@ nav ul li a:hover {
     display: block;
   }
 }
+
