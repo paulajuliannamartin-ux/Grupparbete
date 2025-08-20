@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <!-- Google Tag Manager -->
+     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -10,11 +10,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My BRAND</title>
+  <title>Min Klädshop</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
+      <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTBM2C43"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -25,6 +25,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <ul>
         <li><a href="#" onclick="showPage('home')">Startsida</a></li>
         <li><a href="#" onclick="showPage('collection')">Kollektion</a></li>
+        <li><a href="#" onclick="showPage('closet')">Closet Organiser</a></li>
         <li><a href="#" onclick="showPage('about')">About</a></li>
       </ul>
     </nav>
@@ -35,7 +36,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="hero">
       <img src="images/hero.jpg" alt="Basplagg Hero Bild">
       <div class="hero-text">
-        <h2>WEBSHOP FOR BASE CLOSET</h2>
+        <h2>VWEBSHOP FOR BASE CLOSET</h2>
         <p>EXPLORE THE CLOSET.</p>
         <button onclick="showPage('collection')">Handla Nu</button>
       </div>
@@ -44,26 +45,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- KOLLEKTION -->
   <div id="collection" class="content">
-    <h2>OUR COLLECTION</h2>
+    <h2>COLLECTION</h2>
     <div class="products">
+      
+      <!-- T-shirt med dropdown -->
       <div class="product">
-        <img src="images/tshirt.jpg" alt="T-shirt">
+        <img id="tshirtImage" src="images/tshirt.jpg" alt="T-shirt">
         <h3>T-shirt</h3>
+        <label for="tshirtColor">Välj färg:</label>
+        <select id="tshirtColor">
+          <option value="white">Vit</option>
+          <option value="black">Svart</option>
+          <option value="beige">Beige</option>
+        </select>
+        <div class="upload-section">
+          <label>Ladda upp bild för färg:</label>
+          <input type="file" id="tshirtUpload" accept="image/jpeg">
+        </div>
         <p>199 kr</p>
-        <button>BUY NOW</button>
+        <button>Köp nu</button>
       </div>
+
+      <!-- Hoodie -->
       <div class="product">
         <img src="images/hoodie.jpg" alt="Hoodie">
         <h3>Hoodie</h3>
         <p>399 kr</p>
-        <button>BUY NOW</button>
+        <button>Köp nu</button>
       </div>
+
+      <!-- Jeans -->
       <div class="product">
         <img src="images/jeans.jpg" alt="Jeans">
         <h3>Jeans</h3>
         <p>499 kr</p>
-        <button>BUY NOW</button>
+        <button>Köp nu</button>
       </div>
+
     </div>
   </div>
 
@@ -76,6 +94,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="script.js"></script>
 </body>
 </html>
+
+
 
 
 
