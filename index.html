@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-     <!-- Google Tag Manager -->
+         <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -10,49 +10,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Min Klädshop</title>
+  <title>MY BRAND</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <!-- Google Tag Manager (noscript) -->
+          <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTBM2C43"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <header>
-    <h1>MY BRAND</h1>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <nav id="navMenu">
+    <nav>
+      <div class="logo">MY BRAND</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
       <ul>
         <li><a href="#" onclick="showPage('home')">Startsida</a></li>
         <li><a href="#" onclick="showPage('collection')">Kollektion</a></li>
-        <li><a href="#" onclick="showPage('closet')">Closet Organiser</a></li>
         <li><a href="#" onclick="showPage('about')">About</a></li>
+        <li><a href="#" onclick="showPage('closet')">Closet Organiser</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- HERO -->
-  <div id="home" class="content active">
+  <!-- Startsida -->
+  <section id="home" class="content active">
     <div class="hero">
-      <img src="images/hero.jpg" alt="Basplagg Hero Bild">
-      <div class="hero-text">
-        <h2>VWEBSHOP FOR BASE CLOSET</h2>
-        <p>EXPLORE THE CLOSET.</p>
-        <button onclick="showPage('collection')">Handla Nu</button>
-      </div>
+      <h1>WEBSHOP FOR BASE CLOSET</h1>
+      <p>EXPLORE THE CLOSET</p>
     </div>
-  </div>
+  </section>
 
-  <!-- KOLLEKTION -->
-  <div id="collection" class="content">
-    <h2>COLLECTION</h2>
+  <!-- Kollektion -->
+  <section id="collection" class="content">
+    <h2>Kollektion</h2>
     <div class="products">
-      
-      <!-- T-shirt med dropdown -->
+      <!-- Tshirt med färgval -->
       <div class="product">
-        <img id="tshirtImage" src="images/tshirt.jpg" alt="T-shirt">
+        <img id="tshirtImage" src="images/tshirt_white.jpg" alt="T-shirt">
         <h3>T-shirt</h3>
-        <label for="tshirtColor">Välj färg:</label>
+        <label for="tshirtColor">Färg:</label>
         <select id="tshirtColor">
           <option value="white">Vit</option>
           <option value="black">Svart</option>
@@ -78,18 +73,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button>Köp nu</button>
       </div>
 
-    </div>
-  </div>
+      <!-- Skjorta -->
+      <div class="product">
+        <img src="images/shirt.jpg" alt="Skjorta">
+        <h3>Skjorta</h3>
+        <p>349 kr</p>
+        <button>Köp nu</button>
+      </div>
 
-  <!-- ABOUT -->
-  <div id="about" class="content">
-    <h2>Om Oss</h2>
+      <!-- Kjol -->
+      <div class="product">
+        <img src="images/skirt.jpg" alt="Kjol">
+        <h3>Kjol</h3>
+        <p>299 kr</p>
+        <button>Köp nu</button>
+      </div>
+
+      <!-- Jacka -->
+      <div class="product">
+        <img src="images/jacket.jpg" alt="Jacka">
+        <h3>Jacka</h3>
+        <p>699 kr</p>
+        <button>Köp nu</button>
+      </div>
+
+      <!-- Sneakers -->
+      <div class="product">
+        <img src="images/sneakers.jpg" alt="Sneakers">
+        <h3>Sneakers</h3>
+        <p>799 kr</p>
+        <button>Köp nu</button>
+      </div>
+
+      <!-- Stickad tröja -->
+      <div class="product">
+        <img src="images/knit.jpg" alt="Stickad tröja">
+        <h3>Stickad tröja</h3>
+        <p>399 kr</p>
+        <button>Köp nu</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="content">
+    <h2>About</h2>
     <p>MY BRAND BUILDS ON THE BASE OF A CLOSET OUR STORY IS TO GIVE YOU THE BASE FOR A CLOSET THAT WILL SUITE ALL YOUR NEEDS AND BUILD A LONGLASTIN COLLECTION.</p>
-  </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
