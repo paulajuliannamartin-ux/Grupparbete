@@ -155,4 +155,16 @@ nav ul li a:hover {
     display: block;
   }
 }
+.upload-section {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+select {
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--brown);
+}
+
 
